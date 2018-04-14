@@ -4,6 +4,8 @@ const { ephemeral } = require('tls-keygen')
 const spdy = require('spdy')
 const { run, send } = require('micro')
 
+const PORT = process.env.PORT || 8443
+
 ;(async () => {
   const { key, cert } = await ephemeral({
     key: join(__dirname, '..', 'certs', 'key.pem'),
@@ -16,5 +18,6 @@ const { run, send } = require('micro')
   const server = microHttps(async (req, res) =>
     send(res, 200, `Hello world!`))
 
-  server.listen(process.env.PORT || 8443)
+  server.listen(PORT)
+  console.log(`Server running on port: ${PORT}`)
 })()
