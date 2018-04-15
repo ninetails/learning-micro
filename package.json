@@ -4,7 +4,10 @@
   "description": "Studies about zeit/micro",
   "scripts": {
     "start": "node -r dotenv/config ./src/server.js",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -29,12 +32,19 @@
     "tls-keygen": "^3.4.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.0.0-beta.44",
+    "@babel/preset-env": "^7.0.0-beta.44",
+    "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^8.2.3",
+    "babel-jest": "^22.4.3",
     "eslint": "^4.19.1",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.7.0",
-    "eslint-plugin-standard": "^3.0.1"
+    "eslint-plugin-standard": "^3.0.1",
+    "jest": "^22.4.3",
+    "request-promise": "^4.2.2",
+    "test-listen": "^1.1.0"
   }
 }
