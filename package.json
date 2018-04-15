@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "Studies about zeit/micro",
   "scripts": {
-    "start": "node -r dotenv/config ./src/server.js"
+    "start": "node -r dotenv/config ./src/server.js",
+    "lint": "eslint src"
   },
   "repository": {
     "type": "git",

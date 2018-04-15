@@ -1,4 +1,3 @@
-const { readFileSync } = require('fs')
 const { join } = require('path')
 const { ephemeral } = require('tls-keygen')
 const spdy = require('spdy')
@@ -9,7 +8,7 @@ const PORT = process.env.PORT || 8443
 ;(async () => {
   const { key, cert } = await ephemeral({
     key: join(__dirname, '..', 'certs', 'key.pem'),
-    cert: join(__dirname, '..', 'certs', 'cert.pem'),
+    cert: join(__dirname, '..', 'certs', 'cert.pem')
   })
 
   const microHttps = fn =>
