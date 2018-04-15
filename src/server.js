@@ -18,5 +18,6 @@ const PORT = process.env.PORT || 8443
     send(res, 200, `Hello world!`))
 
   server.listen(PORT)
+  // eslint-disable-next-line no-console
   console.log(`Server running on port: ${PORT}`)
 })()

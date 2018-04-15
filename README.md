@@ -1,4 +1,7 @@
 # learning-micro
+
+[![Build Status](https://travis-ci.org/ninetails/learning-micro.svg?branch=master)](https://travis-ci.org/ninetails/learning-micro)
+
 > Studies about zeit/micro
 
 ## Usage
