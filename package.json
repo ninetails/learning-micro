@@ -28,6 +28,7 @@
     "dotenv": "^5.0.1",
     "husky": "^0.14.3",
     "micro": "^9.1.4",
+    "microrouter": "^3.1.1",
     "spdy": "^3.4.7",
     "tls-keygen": "^3.4.0"
   },
